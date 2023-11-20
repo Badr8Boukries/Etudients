@@ -36,7 +36,7 @@ public class EtudiantApplication {
 			System.out.println("------------------------------------");
 			System.out.println("Id ------- apogee--------------------email---------nom----------Valider");
 			for(Etudiant et : liste) {
-				System.out.println(et.getIdEtudiant()+" -------- "+et.getApogee()+" -------- "+et.getEmail()+" --------- " + et.getNom()+"-------"+et.isValider());
+				System.out.println(et.getIdEtudiant()+" -------- "+et.getApogee()+" -------- "+et.getEmail()+" --------- " + et.getNom()+"-------"+et.isValider() );
 			}
 	
 			System.out.println("------------------------------------");
