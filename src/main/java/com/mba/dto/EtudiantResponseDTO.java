@@ -9,6 +9,7 @@ import lombok.ToString;
 @Data @AllArgsConstructor @NoArgsConstructor @ToString @Builder
 public class EtudiantResponseDTO {
 	private Integer idEtudiant;
+	private boolean valider;
 	private Double apogee;
 	private String nom;
 	private String email;

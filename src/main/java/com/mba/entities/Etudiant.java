@@ -18,6 +18,7 @@ public class Etudiant {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idEtudiant;
 	
+	private boolean valider;
 	private Double apogee;
 	private String nom;
 	private String email;

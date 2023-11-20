@@ -26,6 +26,7 @@ public class EtudiantApplication {
 						.apogee(Math.random()*9999)
 						.email(null)
 						.nom(null)
+						.valider(true)
 						.build();
 				
 				etudiantRepository.save(e);
@@ -33,9 +34,9 @@ public class EtudiantApplication {
 			
 			List<Etudiant> liste=etudiantRepository.findAll();
 			System.out.println("------------------------------------");
-			System.out.println("Id ------- apogee--------------------email---------nom");
+			System.out.println("Id ------- apogee--------------------email---------nom----------Valider");
 			for(Etudiant et : liste) {
-				System.out.println(et.getIdEtudiant()+" -------- "+et.getApogee()+" -------- "+et.getEmail()+" --------- " + et.getNom());
+				System.out.println(et.getIdEtudiant()+" -------- "+et.getApogee()+" -------- "+et.getEmail()+" --------- " + et.getNom()+"-------"+et.isValider());
 			}
 	
 			System.out.println("------------------------------------");
